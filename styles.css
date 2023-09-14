@@ -47,14 +47,11 @@ a {
 }
 
 
-header {
-    width: 100vw;
-    background: inherit;
-}
-.nav-bar {
+.header {
     position: fixed;
     top: 0;
-    width: 100%;
+    left: 0;
+    right: 0;
     background: inherit;
     padding: 10px;
     display: flex;
@@ -89,7 +86,7 @@ header {
     right: 20px;
     cursor: pointer;
 }
-.nav-bar ul li {
+.header ul li {
     padding-right: 2rem;
 }
 .logo-container {
@@ -183,7 +180,7 @@ button:hover {
 #about, #projects, #contact {
     display: grid;
     place-items: center;
-    padding: 50px;
+    padding: 10%;
 
 }
 
@@ -196,7 +193,7 @@ button:hover {
 }
 .about-wrapper {
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 40% 40%;
     gap: 10%;
 }
 
@@ -210,11 +207,11 @@ button:hover {
 .skill-wrapper {
     display: grid;
     grid-template-columns: repeat(3, auto);
+    gap: 10px;
 }
 .skill {
     padding: 10px;
     background: #ececec;
-    margin: 10px;
     text-align: center;
     transition: 300ms ease;
     box-shadow: 5px 5px 5px black;
@@ -384,7 +381,7 @@ footer img {
         font-size: clamp(1rem, 1.5rem, 2rem);
     }
     .about-wrapper {
-        grid-template-columns: 100%;
+        grid-template-columns: 90%;
     }
     .project-container {
         grid-template-columns: auto;
