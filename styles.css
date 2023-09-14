@@ -193,7 +193,7 @@ button:hover {
 }
 .about-wrapper {
     display: grid;
-    grid-template-columns: 40% 40%;
+    grid-template-columns: 50% 50%;
     gap: 10%;
 }
 
@@ -207,7 +207,7 @@ button:hover {
 .skill-wrapper {
     display: grid;
     grid-template-columns: repeat(3, auto);
-    gap: 10px;
+    gap: 15px;
 }
 .skill {
     padding: 10px;
