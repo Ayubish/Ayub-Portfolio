@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles.css">
+    <title>Ayub | Web Developer</title>
+    <link rel="icon" type="images/x-icon" href="src/img/favicon.ico">
+</head>
+<body class="darkBody">
+
+    <!--The header Section-->
+    <header class="header">
+        <nav class="nav-bar">
+            <div class="logo-container">
+                <img class="logo-img" src="src/img/logo-low.jpg" alt="Ayub">
+                <span class="logo-txt">AYUB NAS.</span>
+            </div>
+
+            <!--Black empty canva to close the sidebar when touched-->
+            <div class="empty d-none"></div>
+            <!--Done-->
+
+            <div class="menu-container d-none-mobile">
+                <div class="mobile-menu">
+                    <img class="logo-img" src="src/img/logo-low.jpg" alt="Ayub">
+                    <i class="fa-solid fa-xmark"></i>
+                    <p>Let's build the future</p>
+                    <hr>
+                </div>
+                <ul class="desktop-menu">
+                   <li><a href="#home">Home</a></li>
+                   <li><a href="#about">About</a></li>
+                   <li><a href="#projects">Projects</a></li>
+                   <li><a href="#contact">Contact</a></li>
+                   <li><i onclick="dark()" class="fa-regular fa-sun"></i></li>
+                </ul>
+                <div class="mobile-connect">
+                    <p>LET'S CONNECT</p>
+                    <div class="social">
+                        <a href="https://www.linkedin.com/in/ayub-nasir/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/Ayubish" target="_blank"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://facebook.com/Ayubish" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                        <i class="fa-solid fa-envelope"></i>
+                    </div>
+                </div>
+            </div>
+            <i class="fa-solid fa-bars"></i>
+        </nav>
+    </header>
+    <!--THe header sction ends here-->
+
+    <main>
+        <!--The hero section-->
+        <section id="home" class="home">
+            <div class="hero">
+                <h1>HOLA.👋</h1>
+                <h1>I'M AYUB NASIR.</h1>
+                <p>A skilled <span class="title">Front-End Web Developer</span> with passion for crafting visually astuning websites.</p>
+            </div>
+            <!--Animated title-->
+            <div class="title-screen">
+                <div class="sec-screen title">
+                    <p>Front-End Developer</p>
+                    <p>UI/UX Designer</p>
+                    <p>Freelancer</p>
+                </div>
+            </div>
+
+            <div class="btns">
+                <button class="primary-btn"><a href="#projects">Projects</a></button>
+                <button class="secondary-btn"><a href="src/resume.pdf" target="_blank">Resume</a></button>
+            </div>
+
+        </section>
+        <!--The hero section ends here-->
+
+        <section id="about">
+            <h1 class="head">About Me.</h1>
+            <p class="about-intro">Welcome to my personal portfolio website, where I showcase my skills, projects, and journey in the world of web development.</p>
+    
+            <div class="about-wrapper">
+                <div class="about-me">
+                    <h2>Little about me</h2>
+                    <p>I'm a frontend software developer with experience in HTML, CSS and JavaScript. I'm a quick learner and collaborate closely with clients to create efficient, scalable, and user-friendly solutions that solve real-world problems.</p>
+                      <br><p>Let's work together and bring your website ideas to life! </p>
+                    <a href="#contact"><button class="primary-btn">Contact</button></a>
+                </div>
+                <div class="my-skills">
+                    <h2>My Skills</h2>
+                    <div class="skill-wrapper">
+                    <div class="skill html">
+                        <i class="fa-brands fa-html5"></i>
+                        <p>HTML5</p>
+                    </div>
+                    <div class="skill css">
+                        <i class="fa-brands fa-css3-alt"></i>
+                        <p>CSS3</p>
+                    </div>
+                    <div class="skill javascript">
+                        <i class="fa-brands fa-square-js"></i>
+                        <p>JavaScript</p>
+                    </div>
+                 <div class="skill bootstrap">
+                        <i class="fa-brands fa-bootstrap"></i>
+                        <p>Bootstrap</p>
+                    </div>
+                    <div class="skill react">
+                        <i class="fa-brands fa-react"></i>
+                        <p>React</p>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects">
+            <h1 class="head">Projects.</h1>
+            <p>These are some of the projects I've built...</p>
+            <div class="project-container">
+                <div class="project">
+                    <img src="src/img/project1.jpg" alt="Project mockup">
+                    <div class="project-description">
+                    <h2>Hira Technology</h2>
+                    <h3 class="title">Front-end Development</h3>
+                    <p>This is a website I developed for a software company called Hira Technology, to showcase the company's profiles and services.</p>
+                    <br><p>To build this project I've used HTML, CSS and JavaScript.</p>
+                    <button><a href="https://hiratechnology.netlify.com" target="_blank">👁Live Demo</a></button>
+                    </div>
+                </div>
+                <div class="project">
+                    <img src="src/img/project2.jpg" alt="Project mockup">
+                    <div class="project-description">
+                    <h2>Gulit E-Commerce</h2>
+                    <h3 class="title">Full-stack Development</h3>
+                    <p>Online store with Stripe payments integrations, SMS integration and guest user shopping.</p>
+                    <br><p>To build this project I've used HTML, CSS and JavaScript.</p>
+                    <button><a href="https://hiratechnology.netlify.com" target="_blank">👁Live Demo</a></button>
+                    </div>
+                  </div>
+                <div class="project">
+                    <img src="src/img/project1.jpg" alt="Project mockup">
+                    <div class="project-description">
+                    <h2>Hira Technology</h2>
+                    <h3 class="title">Front-end Development</h3>
+                    <p>Online store with Stripe payments integrations, SMS integration and guest user shopping.</p>
+                    <br><p>To build this project I've used HTML, CSS and JavaScript.</p>
+                    <button><a href="https://hiratechnology.netlify.com" target="_blank">👁Live Demo</a></button>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+        <section id="contact">
+            <h1 class="head">Contact Me.</h1>
+            <div class="contact-wrapper">
+                <div class="contact-left">
+                    <img src="src/img/typing.jpg" alt="Typing">
+                    <h2>Ayub Nasir</h2>
+                    <h4 class="title">Front-End Developer</h4>
+                    <br>
+                    <p>I'm available for freelance jobs.</p>
+                    <p>Contact me and let's talk.</p>
+
+                    <div class="mobile-connect">
+                        <p>Connect with me</p>
+                        <div class="social">
+                            <a href="https://www.linkedin.com/in/ayub-nasir/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                            <a href="https://github.com/Ayubish" target="_blank"><i class="fa-brands fa-github"></i></a>
+                            <a href="https://facebook.com/Ayubish" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                            <i class="fa-solid fa-envelope"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <form action="form" class="contact-form">
+                    <div style="display: flex;">
+                        <span style="margin-right: 5px;">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" required>
+                        </span>
+                        <span>
+                        <label for="phone">Phone Number</label>
+                        <input type="number" id="phone">
+                        <span>
+                    </div>
+                    <span>
+                        <label for="mail">Email</label>
+                        <input type="email" id="email" required>
+                    </span>
+                    <span>
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject">
+                    </span>
+                    <span>
+                        <label for="message">Message</label>
+                        <textarea cols="25" rows="7" id="message"></textarea>
+                    </span>
+                        <input type="submit" value="Submit">
+                </form>
+            </div>
+        </section>
+
+
+      
+    </main>
+    <footer>
+        <p class="last-p">Made with 🖤 by Ayub. 2023</p>
+    </footer>
+    <script src="main.js"></script>
+</body>
+</html>
