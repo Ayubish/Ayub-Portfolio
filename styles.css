@@ -107,6 +107,7 @@ header {
     color: purple;
 }
 header .mobile-connect {
+    display: none;
     margin-top: 50px;
 }
 .social i {
@@ -372,7 +373,7 @@ footer img {
     .mobile-menu {
         display: block;
     }
-    .mobile-connect {
+    header .mobile-connect {
         display: block;
     }
     .fa-bars {
