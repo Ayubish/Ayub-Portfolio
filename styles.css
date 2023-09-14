@@ -24,23 +24,7 @@ a {
     text-decoration: none;
 }
 
-.title-screen {
-    height: 45px;
-    overflow: hidden;
-    z-index: -5;
-}
-.sec-screen {
-    animation-name: anime;
-    animation-duration: 10s;
-    animation-iteration-count: infinite;
-    animation-delay: 5s;
-}
-@keyframes anime {
-    0% {transform: translateY(0);}   
-    33% {transform: translateY(-50px);}
-    66% {transform: translateY(-100px);}
-    100% {transform: translateY(0);}
-}
+
 .title {
     background: linear-gradient(to right, purple, dodgerblue);
     background-clip: text;
@@ -123,7 +107,6 @@ header {
     color: purple;
 }
 header .mobile-connect {
-    display: none;
     margin-top: 50px;
 }
 .social i {
@@ -142,12 +125,12 @@ header .mobile-connect {
 /*The home section*/
 
 #home {
-    height: 100vh;
+    min-height: 100vh;
     display: grid;
     place-items: center;
     text-align: center;
     padding: 10%;
-    font-size: 2rem;
+    font-size: 1.8rem;
 }
 
 .primary-btn {
@@ -157,6 +140,8 @@ header .mobile-connect {
     cursor: pointer;
     color: inherit;
     font-size: 16px;
+    color: #c4abfd;
+
     
 } 
 .secondary-btn {
@@ -174,13 +159,30 @@ button:hover {
     scale: 1.1;
 }
 
+.title-screen {
+    height: 2.5rem;
+    overflow: hidden;
+    z-index: -5;
+}
+.sec-screen {
+    animation-name: anime;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-delay: 2s;
+}
+@keyframes anime {
+    0% {transform: translateY(0);}   
+    33% {transform: translateY(-40px);}
+    66% {transform: translateY(-80px);}
+    100% {transform: translateY(0);}
+}
 /*The home section ends here*/
 
 
 #about, #projects, #contact {
     display: grid;
     place-items: center;
-    padding: 10%;
+    padding: 50px;
 
 }
 
@@ -251,12 +253,11 @@ button:hover {
 }
 
 .project {
-    background: #131524;
+    background: inherit;
     padding: 10px;
     border-radius: 10px;
     box-shadow: 10px 10px 15px #0000004d, -5px 0 10px #0000004d;
     display: flex;
-    color: #c4abfd;
     
 }
 
@@ -379,6 +380,7 @@ footer img {
     }
     #home {
         padding-top: 20%;
+        font-size: clamp(1rem, 1.5rem, 2rem);
     }
     .about-wrapper {
         grid-template-columns: 100%;
