@@ -224,7 +224,7 @@ button:hover {
     color: orangered;
     
 }
-.css:hover {
+.css:hover, .python:hover {
     color: blue;
 }
 .javascript:hover {
