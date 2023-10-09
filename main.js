@@ -1,7 +1,10 @@
 
-const body = document.querySelector("body"); 
+const body = document.querySelector("body");
+const toggleBtn = document.querySelector("#toggle");
 function dark() {
     body.classList.toggle("darkBody");
+    toggleBtn.classList.toggle("fa-toogle-off");
+    toggleBtn.classList.toggle("fa-toogle-on");
 }
 
 const boxes = document.querySelectorAll(".animate");
