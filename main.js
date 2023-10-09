@@ -1,6 +1,6 @@
 
 const body = document.querySelector("body");
-const toggleBtn = document.querySelector("#toggle");
+const toggleBtn = document.querySelector(".toggle");
 function dark() {
     body.classList.toggle("darkBody");
     toggleBtn.classList.toggle("fa-toggle-off");
